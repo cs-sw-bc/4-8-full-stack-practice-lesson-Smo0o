@@ -1,0 +1,25 @@
+<h1><%= movie.title %></h1>
+<p>Genre: <%= movie.genre %></p>
+<p>Year: <%= movie.releaseYear %></p>
+
+<a href="/movies/<%= movie._id %>/reviews/new">Add Review</a>
+
+<hr />
+
+<h2>Reviews</h2>
+
+<% if (reviews.length === 0) { %>
+  <p>No reviews yet. Be the first!</p>
+<% } %>
+
+<ul>
+  <% reviews.forEach(r => { %>
+    <li>
+      <strong><%= r.rating %>/5</strong>
+      <br />
+      <%= r.comment %>
+    </li>
+  <% }) %>
+</ul>
+
+<a href="/movies">← Back to Movies</a>

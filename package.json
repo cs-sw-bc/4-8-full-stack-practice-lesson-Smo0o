@@ -1,0 +1,33 @@
+{
+  "name": "4-8-full-stack-practice-lesson-smo0o",
+  "version": "1.0.0",
+  "description": "You will build a **server-rendered full-stack app** using:",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+     "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cs-sw-bc/4-8-full-stack-practice-lesson-Smo0o.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cs-sw-bc/4-8-full-stack-practice-lesson-Smo0o/issues"
+  },
+  "homepage": "https://github.com/cs-sw-bc/4-8-full-stack-practice-lesson-Smo0o#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "ejs": "^4.0.1",
+    "express": "^5.2.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^9.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11",
+    "type": "module"
+  }
+}

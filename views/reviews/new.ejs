@@ -1,0 +1,13 @@
+<h1>Add Review for <%= movie.title %></h1>
+
+<form method="POST" action="/movies/<%= movie._id %>/reviews">
+  <label>Rating (1–5)</label>
+  <input type="number" name="rating" min="1" max="5" required />
+
+  <label>Comment</label>
+  <textarea name="comment" required></textarea>
+
+  <button>Add Review</button>
+</form>
+
+<a href="/movies/<%= movie._id %>">Cancel</a>
